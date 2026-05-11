@@ -4,12 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "AI Motion Battle Arena is running!"
-if __name__ == "__main__":
-    app.run()    
-
-
-import cv2
-import mediapipe as mp
-import math
-import numpy as np
+    return """
+    <h1>AI Motion Battle Arena</h1>
+    <p>AI-powered Dragon Ball Z pose battle game.</p>
+    <p>Built with MediaPipe, LangChain, Claude AI, OpenCV, and RAG.</p>
+    """
